@@ -6,6 +6,17 @@
     background-image: url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg), url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg);
     background-position: right 40.3% bottom -509px, right -625px top -461px;
 }
+
+.wrapped_article{
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    
+}
 .wrapped-container{
     padding: 64px 0px;
     text-align: center;
@@ -128,6 +139,14 @@
 }
 
 
+@media screen and (min-width:620px){
+    .wrapped{
+        background-image: url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg), url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg);
+        background-position: right 40.3% bottom -509px, right -542px top -461px;
+    }
+}
+
+
 @media screen and (min-width:768px){
     .listen-section{
         background-image: url(https://content-tooling.spotifycdn.com/images/1d2242b4-f071-4244-a276-3bcdc58e77cf_lie_circles-tablet.svg);
@@ -135,12 +154,15 @@
     background-size: auto 181%;
     background-repeat: no-repeat;
     }
-
+.wrapped_article{
+    min-height: 1146px;
+}
    
 
     
    
 }
+
 
 
 @media screen and (min-width:1200px){
@@ -197,15 +219,16 @@
         margin-right: 20px;
     }
 
+    .wrapped_article{
+        
+        min-height: auto;
+        
+    }
+
     
 }
 
 
 
-@media screen and (min-width:620px){
-    .wrapped{
-        background-image: url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg), url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg);
-        background-position: right 40.3% bottom -509px, right -542px top -461px;
-    }
-}
+
 

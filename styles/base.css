@@ -22,9 +22,8 @@ a{
 }
 header{
     width: 100%;
-    height: 80px;
+    height: 54px;
     background-color: #000000;
-    
 }
 
 .header-wrapper{
@@ -295,6 +294,9 @@ display: inline-flex;
     .menu-btn{
         display: none;
     }
+    header{
+        height: 80px;
+    }
 }
 
 @media screen and (max-width:990px){
@@ -304,6 +306,8 @@ display: inline-flex;
         font-weight: 700;
         
     }
+
+   
    
 
     
@@ -317,6 +321,10 @@ display: inline-flex;
 
     #mobile-nav{
         display: none !important;
+    }
+
+    header{
+        height: 80px;
     }
 
     
