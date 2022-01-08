@@ -138,12 +138,6 @@
 }
 
 
-@media screen and (min-width:620px){
-    .wrapped{
-        background-image: url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg), url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg);
-        background-position: right 40.3% bottom -509px, right -542px top -461px;
-    }
-}
 
 
 @media screen and (min-width:768px){
@@ -229,5 +223,9 @@
 
 
 
-
-
+@media screen and (min-width:620px){
+    .wrapped{
+        background-image: url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg), url(https://www-growth.scdn.co/static/home/wrapped-homepage-banner-graphic-tablet-mobile.svg);
+        background-position: right 40.3% bottom -509px, right -542px top -461px;
+    }
+}
