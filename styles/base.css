@@ -16,6 +16,10 @@ a{
     color: #000;
 }
 
+.maxwidth-container{
+    margin: 0 auto;
+    max-width: 750px;
+}
 header{
     width: 100%;
     height: 80px;

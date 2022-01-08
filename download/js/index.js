@@ -1,16 +1,22 @@
-const platform = navigator.appVersion;
+const agent = navigator.userAgent;
+
 let os = null;
-if(platform.indexOf('Mac')!=-1){
-    os = "mac"
+if(agent.indexOf('iPhone')!=-1){
+     os = "ios"
+    
 }
-if(platform.indexOf('Win')!=-1){
+else if(agent.indexOf('Android')!=-1){
+    os ="android"
+}
+else if(agent.indexOf('Mac OS')!=-1){
+  os = "mac"  
+}
+else if(agent.indexOf('Win')!=-1){
     os = "windows"
 }
-
-if(platform.indexOf('Linux')!=-1){
-
+else if(agent.indexOf('Linux')!=-1){
     os = "linux"
 }
 
-
+// Redirect the user to a os directory based on their machine
 window.location.href=`./${os}`;
