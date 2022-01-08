@@ -1,0 +1,83 @@
+
+
+.linux-container{
+    padding: 0px 15px;
+    margin: 90px auto 40px;
+}
+.linux_top_header{
+    padding: 0px 0px 0.67em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 32px;
+}
+.linux-desc1,.linux-desc2,.linux-desc3,.linux-desc4,.linux-desc5,.linux-desc6,.linux-desc7{
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 0px 0px 1em;
+}
+.linux-desc1 a,.linux-desc2 a,.linux-desc4 a{
+    text-decoration: underline;
+    color: blue;
+}
+.linux_secondary_header{
+    padding: 0px 0px 0.75em;
+    font-weight: 900;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+.header3{
+font-size: 20px;
+padding: 0px 0px 1em;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+
+.code_snippet{
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    padding: 11.5px;
+    border: 1px solid rgb(204, 204, 204);
+    color: rgb(83, 83, 83);
+    margin: 0px 0px 12px;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    overflow-x: scroll;
+    font-size: 15px;
+    
+}
+
+.code_snippet::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media screen and (min-width:768px){
+    .linux-container{
+        max-width: 800px;
+    }
+    .linux_top_header{
+        font-size: 40px;
+    }
+    linux_secondary_header{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+    }
+    .header3{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media screen and (min-width:968px){
+    .linux-container{
+        margin: 130px auto 60px;
+    }
+    .linux_top_header{
+        font-size: 48px;
+    }
+}
