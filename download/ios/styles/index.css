@@ -1,0 +1,128 @@
+.mobile-download-section{
+    background-color: rgb(25, 230, 140);
+}
+
+.mobile-container{
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.mobile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-phone-container{
+    position: relative;
+    margin: 48px 12px 32px;
+    width: 42px;
+}
+.download-phone{
+    width: 100%;
+}
+.download-phone-circle{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width:28px;
+    transform: translate(-50%,-50%);
+    animation:opac .3s ease-in 1;
+}
+.download-phone-check{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width:12px;
+    height: 12px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: 0.3s ease 0.9s 1 normal forwards running moveTop;
+}
+
+@keyframes opac{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes moveTop{
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 50%);
+    }
+    
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.download-heading{
+    text-align: center;
+    padding: 0px 0px 0.67em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+.download-desc{
+    display: block;
+    padding: 0px 0px 1em;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.download-cta{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border: 0;
+    background-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+.download-cta:hover .inner-download-cta{
+    background-color: #f6f6f6;
+    transform: scale(1.04);
+}
+
+.inner-download-cta{
+    padding: 14px 32px;
+    background-color: #fff;
+    border-radius: 65px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+
+
+
+@media screen and (min-width:768px){
+    .download-heading{
+        padding-bottom: 32px;
+        font-size: 48px;
+    }
+    .download-desc{
+        margin-top: 16px;
+    }
+    .download-cta{
+        margin-bottom: 78px;
+    }
+    .mobile-upsell-content h3{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+    }
+    .mobile-upsell-buttons{
+        flex-direction: row;
+    }
+}
