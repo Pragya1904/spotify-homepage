@@ -23,9 +23,12 @@ const getUser = () => {
         const { error } = err.response.data;
         if (error) {
           try {
-            const r = await axios.post("http://localhost:5000/refresh_token", {
-              refresh_token: Cookies.get("refresh_token"),
-            });
+            const r = await axios.post(
+              "https://spotify-home.herokuapp.com/refresh_token",
+              {
+                refresh_token: Cookies.get("refresh_token"),
+              }
+            );
             Cookies.set("access_token", r.data.access_token);
             window.location.reload();
           } catch (err) {
